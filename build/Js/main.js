@@ -163,17 +163,43 @@ function toggle_visibility(search_box_mobile) {
   // for count
   var count = 1;
   var countEl = document.getElementById("count");
-  function pluss(){
-      count++;
-      countEl.value = count;
-  }
+  var totalitems = 1;
+  var price = 65.00;
+  var discountPrice = 65;
+  var totalvalue = discountPrice;
+  document.getElementById('discount-price').innerHTML = discountPrice;
+
+    function pluss(){
+
+        if(totalitems <10){
+            count++;
+            countEl.value = count;
+            totalitems++;
+            price = price + discountPrice;
+            document.getElementById('Cart-product-price').innerHTML = price;
+            document.getElementById('total-items').innerHTML = totalitems;
+            document.getElementById('total-value').innerHTML = price;
+        }else{
+            alert("Maximum 10 items");
+        }
+   
+    }
+
+
+ 
   function minus(){
     if (count > 1) {
       count--;
       countEl.value = count;
-    }  
+      totalitems--;
+      price = price - discountPrice ;
+      document.getElementById('Cart-product-price').innerHTML = price;
+      document.getElementById('total-items').innerHTML = totalitems;
+      document.getElementById('total-value').innerHTML = price;
+    }
   }
-
+ 
+  console.log(totalitems);
 
     new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
         type : 'cover'

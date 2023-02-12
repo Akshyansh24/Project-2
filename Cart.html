@@ -136,7 +136,7 @@
                                                     <a href="">Aliquam tincidunt</a>
                                                 </div>
                                                 <div class="product-price-cart">
-                                                    <span class="discount-price" style="color:black;">Price :- ₹65.00</span>
+                                                    <span class="discount-price"  style="color:black;">Price :- ₹ <span id="discount-price"> </span></span>
                                                     <span class="regular-price">₹86.80</span>
                                                 </div>
                                             </div>
@@ -147,14 +147,14 @@
                                                                     <button class="increment-decrement-btn" onclick="minus()">
                                                                         <i id="moins" class="fas fa-minus"></i>
                                                                     </button>
-                                                                    <input min="1" value="1" id="count" class="input-value-increment-decrement" type="number">
-                                                                    <button class="increment-decrement-btn" onclick="pluss()">   
+                                                                    <input min="1" value="1" id="count" class="input-value-increment-decrement" type="number" disabled>
+                                                                    <button class="increment-decrement-btn" id="plus-btn" onclick="pluss()">   
                                                                         <i id="plus" class="fas fa-plus"></i>
                                                                     </button>
                                                                 </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <strong class="Cart-product-price">₹65.00</strong>
+                                                        <strong class="Cart-product-price" >₹<span id="Cart-product-price" >65 </span></strong>
                                                         <a class="delete" href=""><i class="fas fa-trash-alt"></i></a>
                                                     </div>
                                                 </div>
@@ -173,8 +173,8 @@
                         <div class="cart-detail">
                             <div class="card-block">
                                 <div class="cart-subtotal-products">
-                                    <span class="subtotal">1 item</span>
-                                    <span class="value">₹65.86</span>
+                                    <span class="subtotal"> <span id="total-items"> 1</span> item</span>
+                                    <span class="value" id="Cart-product"></span>
                                 </div>
                                 <div class="cart-subtotal-products">
                                         <span class="subtotal">Shipping</span>
@@ -185,7 +185,7 @@
                             <div class="card-block">
                                     <div class="cart-subtotal-products">
                                         <span class="subtotal">Total(tax incl.)</span>
-                                        <span class="value">₹65.86</span>
+                                        <span class="value">₹ <span id="total-value"> 65</span></span>
                                     </div>
                                    
                             </div>
@@ -286,7 +286,7 @@
     <script src="./build/Js/owl.carousel.min.js"></script>
     <script src="./Build/Js/bootstrap4.min.js"></script>
     <script src="./build/Js/main.js"></script>
-    <script src="./build/Js/counter.js"></script>
+    <!-- <script src="./build/Js/counter.js"></script> -->
 </body>
 
 </html>
