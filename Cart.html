@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <!-- ============== Title Icon =================== -->
+    <link rel="icon" href="./build/Images/faviicon.png" type="image/png" sizes="32x26">
+    <!-- ============== Bootstrap =============== -->
+    <link rel="stylesheet" href="./Build/Css/bootstrap4.min.css">
+    <!-- ============== main stylesheet ============ -->
+    <link rel="stylesheet" href="./Build/Css/index.css">
+    <!-- ============== Animation.css ============== -->
+    <link rel="stylesheet" href="./Build/Css/animate.css">
+    <link rel="stylesheet" href="./build/Css/w3-animation.css">
+    <!-- ============== Owl Carousel =============== -->
+    <link rel="stylesheet" href="./build/Css/owl.carousel.css">
+    <link rel="stylesheet" href="./build/Css/owl.theme.default.min.css">
+    <!-- ============== Font AWESOME =============== -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- ============== Font Style ================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ================ Header ==================== -->
+    <div class="section-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="header-detail">
+                        <a href="">
+                            <i class="fas fa-envelope"></i> htinfotech7@gmail.com
+                        </a>
+                    </div>
+                    <div class="header-detail">
+                        <a href="">
+                            <i class="fas fa-phone"></i> +91-234-567-8900
+                        </a>
+                    </div>
+                    <div class="header-detail">
+                        <a href="">
+                            <i class="fas fa-clock"></i> Mon-Sat 8am to 7pm
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="header-social">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================== Nav Bar =================== -->
+    <div class="section-nav navv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="nav-logo-box">
+                        <a href="index.html">
+                            <img src="./build/Images/nav-logo.png" style=" width: 100%;" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="nav-bar">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                            <li><a href="shop.html"><i class="fas fa-box-open"></i>Shop</a></li>
+                            <li><a href="aboutus.html"><i class="fas fa-pen-square"></i>About Us</a></li>
+                            <li><a href="Contact.html"><i class="fas fa-envelope"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart-box" >
+                        <a href="Cart.html"><i class="fas fa-cart-plus"></i> Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== Search BAR =================  -->
+    <div class="section-header-lower">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="Category-heading">
+                        <h2><i class="fas fa-cart-plus"></i>Cart</h2>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search Product">
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== Category - Slider ============= -->
+
+    <div class="section-cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="cart">
+                        <div class="cart-block">
+                            <h1 class="cart-heading">Shopping Cart</h1>
+                        </div>
+                        <hr class="seperater">
+                        <div class="cart-overview">
+                            <ul class="cart-items-ul">
+                                <li class="cart-items">
+                                    <div class="product-line-grid">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="product-img">
+                                                    <img src="./build/Images/product-1.jpg" style="width:100%;" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="product-info">
+                                                    <a href="">Aliquam tincidunt</a>
+                                                </div>
+                                                <div class="product-price-cart">
+                                                    <span class="discount-price" style="color:black;">Price :- ₹65.00</span>
+                                                    <span class="regular-price">₹86.80</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                            <div class="for-input">
+                                                                    <button class="increment-decrement-btn" onclick="minus()">
+                                                                        <i id="moins" class="fas fa-minus"></i>
+                                                                    </button>
+                                                                    <input min="1" value="1" id="count" class="input-value-increment-decrement" type="number">
+                                                                    <button class="increment-decrement-btn" onclick="pluss()">   
+                                                                        <i id="plus" class="fas fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <strong class="Cart-product-price">₹65.00</strong>
+                                                        <a class="delete" href=""><i class="fas fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart-items"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- ================== Cart - Summary -============== -->
+                    <div class="cart-summary">
+                        <div class="cart-detail">
+                            <div class="card-block">
+                                <div class="cart-subtotal-products">
+                                    <span class="subtotal">1 item</span>
+                                    <span class="value">₹65.86</span>
+                                </div>
+                                <div class="cart-subtotal-products">
+                                        <span class="subtotal">Shipping</span>
+                                        <span class="value">₹0</span>
+                                    </div>
+                            </div>
+                            <hr class="seperater">
+                            <div class="card-block">
+                                    <div class="cart-subtotal-products">
+                                        <span class="subtotal">Total(tax incl.)</span>
+                                        <span class="value">₹65.86</span>
+                                    </div>
+                                   
+                            </div>
+                            <hr class="seperater">
+                            <div class="card-block">
+                                    <button class="shopping-btn" type="button"><a class="shopping-anchar" href="Checkout.html">Continue Shopping</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================== Footer ======================= -->
+    <div class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-box-1">
+                        <div class="footer-logo">
+                            <a href=""><img src="./Build/Images/footer-logo-1.png" alt=""></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>How to pursue pleasure rationally thats encounter consequences that extremely painful. Nor again is there anyones who loves or pursues or ut desires obtains pain of itself, because.</p>
+                        </div>
+                        <div class="footer-social">
+                            <h4>Follow Us</h4>
+                            <ul class="footer-ul">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 pl-0 pr-0">
+                    <div class="our-links-box">
+                        <div class="footer-heading">
+                            <h2>Our Links</h2>
+                        </div>
+                        <div class="footer-links">
+                            <ul class="footer-links-ul">
+                                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                                <li><a href="shop.html"><i class="fas fa-box-open"></i>Shop</a></li>
+                                <li><a  href="aboutus.html"><i class="fas fa-pen-square"></i>About Us</a></li>
+                                <li><a href="Contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 pl-0 pr-0">
+                    <div class="footer-heading">
+                        <h2 class="instagram-title">Instagram</h2>
+                    </div>
+                    <div class="instagram">
+                        <div class="instagram-img">
+                            <a href=""><img src="./Build/Images/insta1.jpg" alt=""></a>
+                        </div>
+                        <div class="instagram-img">
+                            <a href=""><img src="./Build/Images/insta2.jpg" alt=""></a>
+                        </div>
+                        <div class="instagram-img">
+                            <a href=""><img src="./Build/Images/insta3.jpg" alt=""></a>
+                        </div>
+                        <div class="instagram-img">
+                            <a href=""><img src="./Build/Images/insta4.jpg" alt=""></a>
+                        </div>
+                        <div class="instagram-img">
+                            <a href=""><img src="./Build/Images/insta5.jpg" alt=""></a>
+                        </div>
+                        <div class="instagram-img">
+                            <a href=""><img src="./Build/Images/insta6.jpg" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 pl-0 pr-0">
+                    <div class="footer-heading">
+                        <h2>Contacts</h2>
+                    </div>
+                    <div class="footer-contact-us">
+                        <p>Sant Tukaram Nagar,</p>
+                        <p>Building No 202 / 1131 ,</p>
+                        <p>Pimprigaon </p>
+                        <p>Pune- 411018 ( MH -India )</p>
+                        <p>Email:- <a class="contact-info-anchar" href="">info@paviexim.com</a></p>
+                        <p>Mobile:- <a class="contact-info-anchar" href="">+919096172734</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--============  Scripts ===================-->
+    <script src="./Build/Js/jquery3.3.1.js"></script>
+    <script src="./build/Js/owl.carousel.min.js"></script>
+    <script src="./Build/Js/bootstrap4.min.js"></script>
+    <script src="./build/Js/main.js"></script>
+    <script src="./build/Js/counter.js"></script>
+</body>
+
+</html>
