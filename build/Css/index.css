@@ -1387,6 +1387,24 @@ background-color: #555;
     content: "/";
 }
 
+
+/* ============Last Section ========= */
+.section-last{
+    background-color:#2874cf;
+  }
+  .last-footer{
+    padding: 20px 0px;
+  }
+  .copyright{
+    color: white;
+    font-size: 15px
+  }
+  .developers{
+    color: white;
+    text-align: right;
+    font-size: 15px;
+  }
+
 /* ============================== Shop Page =================================== */
 
   /* ========= Cart Modal Content ========= */
